@@ -29,7 +29,7 @@ if you want change language to your favourite, You can modify the installation d
 
 ##Screenshot
 Main page
-![enter image description here](http://i.imgur.com/Pex9JL5.png)
+![enter image description here](http://i.imgur.com/nusDxQY.png)
 Information
 ![enter image description here](http://i.imgur.com/R35jj1r.png)
 
