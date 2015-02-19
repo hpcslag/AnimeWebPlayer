@@ -32,6 +32,8 @@ Main page
 ![enter image description here](http://i.imgur.com/nusDxQY.png)
 Information
 ![enter image description here](http://i.imgur.com/R35jj1r.png)
+Play
+![enter image description here](http://i.imgur.com/LdGMaEh.png)
 
 ##Contact
 Facebook: https://www.facebook.com/software0216
