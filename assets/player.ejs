@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width">
+	<title>不起眼女主角培育法 01</title>
+	<style type="text/css">
+	@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+	video{
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+		background-color: black;
+		background-image: /* our video */;
+		background-position: center center;
+		background-size: contain;
+		object-fit: cover;
+		z-index: 3;
+	}
+	body,html{
+		margin: 0px;
+		border: 0px;
+	}
+	#Info{
+		background: rgba(0,0,0,0.5);
+		color: white;
+		position: absolute;
+		font-family: "Open Sans","Noto Sans CJK TC Light","Microsoft JhengHei","Helvetica Neue","WenQuanYi Zen Hei", sans-serif;
+		z-index: 99;
+		top: 30px;
+		left: 30px;
+		padding: 15px;
+		display: none;
+	}
+	</style>
+</head>
+<body>
+<div id="Info">不起眼女主角培育法 01 (無字幕)</div>
+<video controls="" autoplay="" name="media" onclick="go()">
+	<source src="file:///C:/Users/MacTaylors/Desktop/WebPlayer/test.mp4" type="video/mp4">
+</video>
+<script type="text/javascript">
+	(function(){showInfo()})()
+	var v = document.getElementsByTagName('video')[0];
+	function play(){
+		v.play();
+	}
+	function pause(){
+		v.pause();
+	}
+	function go(){
+		if(v.paused){
+			play();
+			showInfo();
+		}else{
+			pause();
+		}
+	}
+	function showInfo(){
+		document.getElementById('Info').style.display = "inline";
+		fadeIn(document.getElementById('Info'));
+		setTimeout(function(){hideInfo();},4000);
+	}
+	function hideInfo(){
+		document.getElementById('Info').style.display = "none";
+	}
+	function fadeIn(el) {
+	  el.style.opacity = 0;
+
+	  var last = +new Date();
+	  var tick = function() {
+	    el.style.opacity = +el.style.opacity + (new Date() - last) / 400;
+	    last = +new Date();
+
+	    if (+el.style.opacity < 1) {
+	      (window.requestAnimationFrame && requestAnimationFrame(tick)) || setTimeout(tick, 16)
+	    }
+	  };
+
+	  tick();
+	}
+	document.addEventListener("keydown", keyDownTextField, false);
+	function keyDownTextField(e) {
+	var keyCode = e.keyCode;
+	  if(keyCode==32) {
+	  	showInfo();
+	  	go();
+	  } else {
+	  	
+	  }
+	}
+</script>
+</body>
+</html>
