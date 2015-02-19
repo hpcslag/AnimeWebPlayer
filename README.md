@@ -23,9 +23,16 @@ Example:
 
 **Language setup**
 Currently supports English,Chinese(Traditional). 
-Switch language,Please add a line to weekly.txt,write 'english' or Other language name before other item.
+Switch language,Please modify under install directory file 'language.yml',write 'english' or Other language name before other item.
 if you want change language to your favourite, You can modify the installation directory under the file **"language.json"**
 
+##Feature
+
+ - Support more Language (i18n)
+ - Support different subtitle group
+ - Extends other Web Player or Modify Theme
+ - Search old video
+ - Up to 26 movies a chapter(different subtitle group exceed accidents may occur!)
 
 ##Screenshot
 Main page
