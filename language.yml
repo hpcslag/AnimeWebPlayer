@@ -8,6 +8,7 @@ language:
     Old: Old
     Back: Back
     Search: Search Anime
+    WORD : No subtitles
     Season : 
     -  Spring
     -  Summer
@@ -19,6 +20,7 @@ language:
     Old: 以前的動畫
     Back: 回上一頁
     Search: 搜尋動畫
+    WORD: 無字幕
     Season : 
     -  春番
     -  夏番

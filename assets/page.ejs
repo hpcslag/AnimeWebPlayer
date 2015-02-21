@@ -140,7 +140,7 @@
 	<div id="time" class="white shadow noto"><!--時間不確定--></div>
 	<ul id="anime" class="noto big">
 		<% for(var i = number.length-1;i>=0;i--){ %>
-		<li><%= name %> (<%= number[i] %>)</li>
+		<li><a href="../player/<%= name %>/video/<%= list[i] %>?n=<%= i %>" target="_blank"><%= name %> (<%= number[i] %>)</a></li>
 		<% } %>
 	</ul>
 </div>
