@@ -2,14 +2,14 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>不起眼女主角培育法</title>
+	<title><%= name %></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
 	<style type="text/css">
 	html:before{ 
 	  background: linear-gradient(
       rgba(102, 102, 102, 0.3), 
       rgba(102, 102, 102, 0.3)
-    ),url(./awe2Q30f.png) no-repeat center center fixed; 
+    ),url(<%= bgp %>) no-repeat center center fixed; 
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -133,18 +133,15 @@
 	</style>
 </head>
 <body>
-<div class="white shadow noto big"><a href="./index.html">← 回首頁</a></div>
+<div class="white shadow noto big"><a href="/">← <%= lang.Back %></a></div>
 <div id="content">
-	<div id="ABackground" class="shadow_v3" style="width:200px;height:200px;background:url(./awe2Q30f.png) no-repeat;background-size:200px;"></div>
-	<div id="title" class="white shadow_v2 noto">不起眼女主角培育法</div>
-	<div id="time" class="white shadow noto">每週三 10:20</div>
+	<div id="ABackground" class="shadow_v3" style="width:200px;height:200px;background:url(<%= bgp %>) no-repeat;background-size:200px;"></div>
+	<div id="title" class="white shadow_v2 noto"><%= name %></div>
+	<div id="time" class="white shadow noto"><!--時間不確定--></div>
 	<ul id="anime" class="noto big">
-		<li>不起眼女主角培育法 (5)</li>
-		<li>不起眼女主角培育法 (4)</li>
-		<li>不起眼女主角培育法 (3)</li>
-		<li>不起眼女主角培育法 (2)</li>
-		<li>不起眼女主角培育法 (1)</li>
-		<li>不起眼女主角培育法 (0)</li>
+		<% for(var i = number.length-1;i>=0;i--){ %>
+		<li><%= name %> (<%= number[i] %>)</li>
+		<% } %>
 	</ul>
 </div>
 
