@@ -1,0 +1,26 @@
+
+default_language: Chinese
+
+language:
+  English:
+    Title : Anime Web Player
+    ThisSeason: This Animated Season 
+    Old: Old
+    Back: Back
+    Search: Search Anime
+    Season : 
+    -  Spring
+    -  Summer
+    -  Autumn
+    -  Winter
+  Chinese:
+    Title : Anime Web Player
+    ThisSeason: 本季動畫
+    Old: 以前的動畫
+    Back: 回上一頁
+    Search: 搜尋動畫
+    Season : 
+    -  春番
+    -  夏番
+    -  秋番
+    -  冬番

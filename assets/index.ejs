@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Anime Web Player</title>
+	<title><%= lang.Title %></title>
 	<style type="text/css">
 		html,body{
 			border: 0px;
@@ -32,7 +32,7 @@
 			width: 143px;
 			text-align: center;
 			position: relative;
-			top: -20px;
+			top: -10px;
 			color: white;
 		}
 		.overflow{
@@ -116,105 +116,32 @@
 <div id="left">
 	<div class="context">
 		<div id="header">
-			<h1 class="os w b">Anime Web Player</h1>
-			<input  type="text" class="noto" onkeypress="" placeholder="搜尋動畫...">
+			<h1 class="os w b"><%= lang.Title %></h1>
+			<input  type="text" class="noto" onkeypress="" placeholder="<%= lang.Search %>...">
 		</div>
 		<div id="onweekly">
-			<h2 class="bigtitle noto">本季動畫 (2015-冬)</h2>
+			<h2 class="bigtitle noto"><%= lang.ThisSeason %> (<%= WhatSeason %>)</h2>
+			<% for(var i=0;i<ThisWeek.length;i++) { %>
 			<div class="info">
 				<div class="bg" style="
-			background:url(../qp2Sn6SVlqCVp6Q.jpg) no-repeat;
+			background:url(<%= ThisWeek[i].bgp %>) no-repeat;
 			background-size:152px;"></div>
-				<h3 class="title overflow noto">艦隊收藏 KanCollection</h3>
+				<h3 class="title overflow noto"><a title="<%= ThisWeek[i].name %>" href="<%= ThisWeek[i].url %>"><%= ThisWeek[i].name %></a></h3>
 			</div>
-			<div class="info">
-				<div class="bg" style="
-			background:url(../qp2Sn6SVlqCVp6Q.jpg) no-repeat;
-			background-size:152px;"></div>
-				<h3 class="title overflow noto">艦隊收藏 KanCollection</h3>
-			</div>
-			<div class="info">
-				<div class="bg" style="
-			background:url(../qp2Sn6SVlqCVp6Q.jpg) no-repeat;
-			background-size:152px;"></div>
-				<h3 class="title overflow noto">艦隊收藏 KanCollection</h3>
-			</div>
-			<div class="info">
-				<div class="bg" style="
-			background:url(../qp2Sn6SVlqCVp6Q.jpg) no-repeat;
-			background-size:152px;"></div>
-				<h3 class="title overflow noto">艦隊收藏 KanCollection</h3>
-			</div>
-			<div class="info">
-				<div class="bg" style="
-			background:url(../qp2Sn6SVlqCVp6Q.jpg) no-repeat;
-			background-size:152px;"></div>
-				<h3 class="title overflow noto">艦隊收藏 KanCollection</h3>
-			</div>
-			<div class="info">
-				<div class="bg" style="
-			background:url(../qp2Sn6SVlqCVp6Q.jpg) no-repeat;
-			background-size:152px;"></div>
-				<h3 class="title overflow noto">艦隊收藏 KanCollection</h3>
-			</div>
-			<div class="info">
-				<div class="bg" style="
-			background:url(../qp2Sn6SVlqCVp6Q.jpg) no-repeat;
-			background-size:152px;"></div>
-				<h3 class="title overflow noto">艦隊收藏 KanCollection</h3>
-			</div>
-			<div class="info">
-				<div class="bg" style="
-			background:url(../qp2Sn6SVlqCVp6Q.jpg) no-repeat;
-			background-size:152px;"></div>
-				<h3 class="title overflow noto">艦隊收藏 KanCollection</h3>
-			</div>
+			<% } %>
 		</div>
 		<div id="onold">
-			<h2 class="bigtitle noto">以前的動畫</h2>
+			<h2 class="bigtitle noto"><%= lang.Old %></h2>
+			<% for(var i = 0;i<Old.length;i++){ %>
 			<div class="info">
 				<div class="bg" style="
-			background:url(../qp2Sn6SVlqCVp6Q.jpg) no-repeat;
+			background:url(<%= Old[i].bgp %>) no-repeat;
 			background-size:152px;"></div>
-				<h3 class="title overflow noto">艦隊收藏 KanCollection</h3>
-			</div><div class="info">
-				<div class="bg" style="
-			background:url(../qp2Sn6SVlqCVp6Q.jpg) no-repeat;
-			background-size:152px;"></div>
-				<h3 class="title overflow noto">艦隊收藏 KanCollection</h3>
-			</div><div class="info">
-				<div class="bg" style="
-			background:url(../qp2Sn6SVlqCVp6Q.jpg) no-repeat;
-			background-size:152px;"></div>
-				<h3 class="title overflow noto">艦隊收藏 KanCollection</h3>
-			</div><div class="info">
-				<div class="bg" style="
-			background:url(../qp2Sn6SVlqCVp6Q.jpg) no-repeat;
-			background-size:152px;"></div>
-				<h3 class="title overflow noto">艦隊收藏 KanCollection</h3>
-			</div><div class="info">
-				<div class="bg" style="
-			background:url(../qp2Sn6SVlqCVp6Q.jpg) no-repeat;
-			background-size:152px;"></div>
-				<h3 class="title overflow noto">艦隊收藏 KanCollection</h3>
-			</div><div class="info">
-				<div class="bg" style="
-			background:url(../qp2Sn6SVlqCVp6Q.jpg) no-repeat;
-			background-size:152px;"></div>
-				<h3 class="title overflow noto">艦隊收藏 KanCollection</h3>
-			</div><div class="info">
-				<div class="bg" style="
-			background:url(../qp2Sn6SVlqCVp6Q.jpg) no-repeat;
-			background-size:152px;"></div>
-				<h3 class="title overflow noto">艦隊收藏 KanCollection</h3>
-			</div><div class="info">
-				<div class="bg" style="
-			background:url(../qp2Sn6SVlqCVp6Q.jpg) no-repeat;
-			background-size:152px;"></div>
-				<h3 class="title overflow noto">艦隊收藏 KanCollection</h3>
+				<h3 class="title overflow noto"><a title="<%= Old[i].name %>" href="<%= Old[i].url %>"><%= Old[i].name %></a></h3>
 			</div>
+			<% } %>
 		</div>
-		<div id="footer"><h3 class="noto"><a href="#">更多以前的動畫 (10)</a></h3></div>
+		<!--<div id="footer"><h3 class="noto"><a href="#">更多以前的動畫 (10)</a></h3></div>-->
 	</div>
 </div>
 <a href="https://github.com/you"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
