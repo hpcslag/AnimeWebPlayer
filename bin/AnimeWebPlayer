@@ -1,0 +1,16 @@
+#!/usr/bin/env node
+
+var argv = process.argv.splice(2)[0];
+
+if(argv == "init"){
+	var fs = require('fs');
+	var path = require('path');
+	fs.writeFileSync(path.join(__dirname,'../path'),process.cwd(),'UTF-8');
+	if(!fs.existsSync(path.join(process.cwd(),'weekly.txt'))){
+		fs.writeFileSync(path.join(process.cwd(),'weekly.txt'),'','UTF-8');
+	}
+}else if(argv == "server"){
+	require('../lib/server.js').listen(80);
+}else{
+	console.log("Welcome! Now go to your Anime Directory and Enter \"animewebplayer init\" \n and start server-> \"animewebplayer server\" \n edit Weekly anime in weeklu.txt ,or can modify language.yml , see more on github http://github.com/hpcslag/AnimeWebPlayer");
+}

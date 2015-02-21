@@ -9,6 +9,7 @@ language:
     Back: Back
     Search: Search Anime
     WORD : No subtitles
+    NOTFOUND: Not Found!
     Season : 
     -  Spring
     -  Summer
@@ -21,6 +22,7 @@ language:
     Back: 回上一頁
     Search: 搜尋動畫
     WORD: 無字幕
+    NOTFOUND: 找不到符合搜尋字詞
     Season : 
     -  春番
     -  夏番

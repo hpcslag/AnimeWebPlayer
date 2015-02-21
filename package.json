@@ -1,0 +1,34 @@
+{
+  "name": "AnimeWebPlayer",
+  "version": "1.0.0",
+  "description": "The weekly anime on the website",
+  "main": "./lib/server.js",
+  "preferGlobal": "true",
+  "dependencies": {
+    "ejs": "^2.2.4",
+    "express": "^4.11.2",
+    "js-yaml": "^3.2.7"
+  },
+  "devDependencies": {},
+  "bin": {
+        "animewebplayer": "./bin/animewebplayer"
+    },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hpcslag/AnimeWebPlayer"
+  },
+  "keywords": [
+    "anime",
+    "player",
+    "japan"
+  ],
+  "author": "MacTaylor",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hpcslag/AnimeWebPlayer/issues"
+  },
+  "homepage": "https://github.com/hpcslag/AnimeWebPlayer"
+}

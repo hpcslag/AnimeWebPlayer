@@ -110,14 +110,47 @@
 		    text-decoration: none;
 		}
 
+		#search{
+			display: none;
+			position: relative;
+			border: 1px solid #ccc;
+			width: 85%;
+			bottom: 10px;
+			background-color: white;
+			border-top-color: #d9d9d9;
+			box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+			-webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+			cursor: default;
+		}
+		#search-ul{
+			list-style: none;
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		#search-ul li{
+			list-style: none;
+			font-size: 17px;
+			line-height: 35px;
+			padding: 20px;
+		}
+		#search-ul li:hover{
+			background-color: #EEEEEE;
+
+		}
 		</style>
 </head>
-<body>
+<body onclick="">
 <div id="left">
 	<div class="context">
 		<div id="header">
 			<h1 class="os w b"><%= lang.Title %></h1>
-			<input  type="text" class="noto" onkeypress="" placeholder="<%= lang.Search %>...">
+			<input type="text" class="noto" id="i_s" onkeypress="" onkeyup="search()" placeholder="<%= lang.Search %>...">
+			<div id="search">
+				<ul id="search-ul" class="noto">
+					<li onclick="Target(event)">Find Not Thing</li>
+				</ul>
+			</div>
 		</div>
 		<div id="onweekly">
 			<h2 class="bigtitle noto"><%= lang.ThisSeason %> (<%= WhatSeason %>)</h2>
@@ -145,5 +178,43 @@
 	</div>
 </div>
 <a href="https://github.com/hpcslag/AnimeWebPlayer"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+<script type="text/javascript">
+	function Target(e){
+		document.location.href= e.target.innerHTML;
+	}
+	function search(){
+		document.getElementById('search').style.display = 'block';
+		var result = loadXMLDoc(document.getElementById('i_s').value);
+		if(result[0] == false){
+			document.getElementById('search-ul').innerHTML = '<li>'+result[1]+'</li>'
+		}else{
+			var html = '';
+			for(var i = 0;i<result.length;i++){
+				html += "<li onclick='Target(event)'>"+result[i]+"</li>";
+			}
+			document.getElementById('search-ul').innerHTML = html;
+		}
+	}
+	function mouseover(){
+		document.getElementById('search').style.display = 'none';
+	}
+	function loadXMLDoc(keyword){
+		var xmlhttp = null;
+		if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari
+		  xmlhttp=new XMLHttpRequest();
+		}
+		else{// code for IE6, IE5
+		  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		xmlhttp.onreadystatechange=function(){
+		  if (xmlhttp.readyState==4 && xmlhttp.status==200){
+		    return xmlhttp.responseText;
+		  }
+		}
+		xmlhttp.open("GET","./search/"+keyword,false);
+		xmlhttp.send(null);
+        return JSON.parse(xmlhttp.responseText);
+	}
+</script>
 </body>
 </html>
