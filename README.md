@@ -32,7 +32,7 @@ if you want change language to your favourite, You can modify the installation d
  - Support different subtitle group
  - Extends other Web Player or Modify Theme
  - Search old video
- - Up to 26 movies a chapter(different subtitle group exceed accidents may occur!)
+ - Auto Sorting,be assured watching!
 
 ##Screenshot
 Main page
