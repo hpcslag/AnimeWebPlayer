@@ -38,11 +38,11 @@ if you want change language to your favourite, You can modify the installation d
 Main page
 ![Main page](http://i.imgur.com/nusDxQY.png)
 Information
-![Main page](http://i.imgur.com/8EeAAk7.png)
+![Information](http://i.imgur.com/R35jj1r.png)
 Search
-![Main page](http://i.imgur.com/R35jj1r.png)
+![Search](http://i.imgur.com/8EeAAk7.png)
 Play
-![Main page](http://i.imgur.com/LdGMaEh.png)
+![Play](http://i.imgur.com/LdGMaEh.png)
 
 ##Contact
 Facebook: https://www.facebook.com/software0216
