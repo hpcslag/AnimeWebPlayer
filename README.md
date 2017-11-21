@@ -1,16 +1,16 @@
 # AnimeWebPlayer
 The weekly anime on the website, Exclusively Japan Anime XDDDD
 
-###you need installed [node.js](http://nodejs.org) before setup.
+### you need installed [node.js](http://nodejs.org) before setup.
 
-##Install
+## Install
 ```
 npm install -g animewebplayer
 animewebplayer init here
 animewebplayer server
 ```
 
-##Setup / Configuration
+## Setup / Configuration
 
 **Setting items per season**
 After the implementation of this project must be initialized, You can see the directory initialization file ***"weekly.txt"***, the file is setup weekly anime item, Enter the project, wrap distinguish animation name to a named folder.
@@ -26,7 +26,7 @@ Currently supports English,Chinese(Traditional).
 Switch language,Please modify under install directory file 'language.yml',write 'english' or Other language name before other item.
 if you want change language to your favourite, You can modify the installation directory under the file **"language.json"**
 
-##Feature
+## Feature
 
  - Support more Language (i18n)
  - Support different subtitle group
@@ -34,7 +34,7 @@ if you want change language to your favourite, You can modify the installation d
  - Search old video
  - Auto Sorting,be assured watching!
 
-##Screenshot
+## Screenshot
 Main page
 ![Main page](http://i.imgur.com/nusDxQY.png)
 Information
@@ -44,7 +44,7 @@ Search
 Play
 ![Play](http://i.imgur.com/LdGMaEh.png)
 
-##Contact
+## Contact
 Facebook: https://www.facebook.com/software0216
 
 Twitter: https://twitter.com/cslag
